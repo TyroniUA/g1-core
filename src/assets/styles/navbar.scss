@@ -1,0 +1,11 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  display: block;
+  background: var(--main-color);
+
+  a {
+    cursor: pointer;
+  }
+}

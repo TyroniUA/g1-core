@@ -1,7 +1,109 @@
+@import "./assets/fonts/stylesheet.scss";
+@import "./assets/styles/";
+
 :root {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --main-color: #396156;
   --secondary-color: #ffc869;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 400;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+
+h5 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+}
+
+.regular {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.no-dec {
+  text-decoration: none;
+}
+
+.color {
+  &-main {
+    color: var(--main-color);
+  }
+
+  &-secondary {
+    color: var(--secondary-color);
+  }
+
+  &-white {
+    color: white;
+  }
+}
+
+.w {
+  &-100 {
+    width: 100%;
+  }
+
+  &-40vw {
+    width: 40vw;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-row {
+    flex-direction: row;
+
+    &-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &-column {
+    flex-direction: column;
+
+    &-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.padding {
+  padding: 2vw 5vw;
 }

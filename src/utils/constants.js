@@ -1,17 +1,37 @@
 export const navLinks = [{
-    title: "Home",
-    link: "#Home",
+  title: "Home",
+  link: "#Home",
+},
+{
+  title: "Principles",
+  link: "#Principles",
+},
+{
+  title: "Products",
+  link: "#Products",
+},
+{
+  title: "Team",
+  link: "#Team",
+},
+]
+
+export const mainSections = [
+  {
+    title: "We are glad you visited G1Core",
+    children: <div>
+      <p>
+        Our passion is creating engaging mobile apps and games that bring value to you. If you are a game designer, a developer, or a potential partner, please reach out to us to discuss collaboration.
+      </p>
+    </div>
   },
   {
-    title: "Principles",
-    link: "#Principles",
+    title: "Our Principles"
   },
   {
-    title: "Products",
-    link: "#Products",
+    title: "Our Products"
   },
   {
-    title: "Team",
-    link: "#Team",
-  },
+    title: "Our Team"
+  }
 ]
