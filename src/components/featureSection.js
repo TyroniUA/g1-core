@@ -1,15 +1,25 @@
 import React from 'react'
 
-export default function FeatureSection({ title, classes, children }) {
+export default function FeatureSection({ title, id, classes, main = false, children }) {
   return (
     <section
-      className={classes || ""}
+      id={id}
+      className={`padding-5vw ${classes}` || "padding-5vw"}
     >
-      <h2>
-        {title}
-      </h2>
-      <div>
+      {main
+        ?
+
+        <h1>
+          {title}
+        </h1>
+        : <h2>
+          {title}
+        </h2>
+      }
+
+      <>
         {children}
-      </div>
+      </>
+
     </section>)
 }

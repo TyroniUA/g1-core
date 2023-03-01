@@ -10,6 +10,7 @@
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 400;
+  scroll-behavior: smooth;
 
   *,
   *:before,
@@ -78,6 +79,26 @@ p {
   &-40vw {
     width: 40vw;
   }
+
+  &-50 {
+    width: 50%;
+  }
+
+  &-70 {
+    width: 70%;
+  }
+}
+
+.h {
+  &-100 {
+    height: 100%;
+  }
+}
+
+.z {
+  &-2 {
+    z-index: 2
+  }
 }
 
 .flex {
@@ -85,6 +106,10 @@ p {
 
   &-between {
     justify-content: space-between;
+  }
+
+  &-evenly {
+    justify-content: space-evenly;
   }
 
   &-row {
@@ -102,8 +127,44 @@ p {
       flex-direction: column-reverse;
     }
   }
+
+  &-align {
+    align-items: center;
+  }
 }
 
 .padding {
   padding: 2vw 5vw;
+
+  &-5vw {
+    padding: 5vw;
+  }
+}
+
+.pos {
+  &-rel {
+    position: relative;
+  }
+
+  &-abs {
+    position: absolute;
+  }
+}
+
+.d {
+  &-inlblock {
+    display: inline-block;
+  }
+}
+
+.margin {
+  &-left {
+    &-20 {
+      margin-left: 20px;
+    }
+  }
+
+  &-zero {
+    margin: 0;
+  }
 }

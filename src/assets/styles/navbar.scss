@@ -1,9 +1,13 @@
 .navbar {
   position: fixed;
   top: 0;
-  padding: 20px;
+  padding: 20px 5vw;
   display: block;
   background: var(--main-color);
+
+  img {
+    cursor: pointer;
+  }
 
   a {
     cursor: pointer;

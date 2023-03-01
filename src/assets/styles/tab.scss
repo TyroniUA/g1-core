@@ -1,0 +1,15 @@
+.tab {
+
+
+  &-group-header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+  }
+
+  &-active {
+    border-bottom: 5px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+}
