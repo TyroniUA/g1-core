@@ -1,10 +1,13 @@
 
 import { React, useState } from "react";
 import FeatureSection from "../components/featureSection";
-import { mainSections, principles } from "../utils/constants";
+import { mainSections, principles, team } from "../utils/constants";
 import mainImage from "../assets/images/mainImage.jpg";
 import TabGroup from "../components/tabGroup";
 import Tab from "../components/tab";
+import TeamCard from "../components/teamCard";
+import Footer from "../components/footer";
+
 
 const Main = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -56,10 +59,52 @@ const Main = () => {
             </Tab>
           </TabGroup>
         )
+      case 3:
+        return renderTeam();
+          case 4:
+            return renderContact();
       default:
         return children;
     }
   }
+
+  const renderTeam = () => {
+
+    return (
+      <div
+        className="flex flex-between"
+      >
+        {team.map(member => <TeamCard
+          key={member.name}
+          name={member.name}
+          text={member.description}
+          title={member.title}
+          img={member.photo}
+        />)}
+      </div>
+
+    )
+  }
+
+  const contactUs = ()=> {
+    return 0;
+  }
+  const renderContact = () => {
+    return (
+      <div>
+        <p>
+          If you are a game designer, a developer, or a potential partner, please reach out to us to discuss collaboration.
+        </p>
+        <button
+        className="button button-yellow"
+        onClick={contactUs}
+        >
+          Contact Us 
+        </button>
+      </div>
+    )
+  }
+
   return (
     <main>
       {mainSections.map((section, index) => {
@@ -79,7 +124,7 @@ const Main = () => {
                 }
               />
               <img
-                className="w-100 h-100 z-2"
+                className="w-50 h-auto object-fit-cover z-2"
                 src={mainImage}
                 alt="Welcome to G1 Core!"
                 width='300'
@@ -92,11 +137,12 @@ const Main = () => {
           key={`${section.title}-${index}`}
           id={section.id}
           title={section.title}
-          classes={index % 2 === 0 ? "section-main flex flex-column color-white"
-            : `section-white flex color-main ${index === 1 ? 'flex-row flex-evenly ' : ''}`}
+          classes={index % 2 === 0 ? "section-main flex flex-column color-white text-align"
+            : `section-white flex color-main ${index === 1 ? 'flex-row flex-between ' : 'flex-column text-align '}`}
           children={defineChildren(section.children, index)}
         />
       })}
+      <Footer />
     </main>
   );
 };

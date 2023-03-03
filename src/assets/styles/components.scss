@@ -1,0 +1,34 @@
+.titleList {
+  h6 {
+    color: var(--main-color);
+    font: 500 18px Poppins;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      font: 400 16px Poppins;
+      color: black;
+    }
+  }
+}
+.button {
+  padding: 20px;
+  min-width: 100px;
+  max-width: 20vw;
+  font: 500 18px Poppins;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+  }
+  &-yellow {
+    background: var(--secondary-color);
+  }
+}

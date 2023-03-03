@@ -1,4 +1,6 @@
 import vector from "../assets/images/vector.svg";
+import yaroslav from "../assets/images/yaroslav.jpeg"
+import volodymyr from "../assets/images/volodymyr.jpeg"
 
 export const navLinks = [{
   title: "Home",
@@ -15,7 +17,7 @@ export const navLinks = [{
 {
   title: "Team",
   link: "#Team",
-},
+}
 ]
 
 export const mainSections = [
@@ -61,7 +63,31 @@ export const mainSections = [
   {
     title: "Our Team",
     id: "Team",
+  },
+  {
+    title: "Contact Us",
+    id: "Contact",
+  }
+]
 
+export const team = [
+  {
+    name: "Yaroslav",
+    title: "CEO",
+    description: "Advised to tech companies. Managed operations, business development, and sales in mobile apps, games, e-commerce and fintech.",
+    photo: yaroslav
+  },
+  {
+    name: "Tatiana",
+    title: "CMO",
+    description: "Marketing genius and a strong will lady.",
+    photo: yaroslav
+  },
+  {
+    name: "Volodymyr",
+    title: "CTO",
+    description: "Senior full-stack developer. Love code and startups. Founder of MMNT - platform to book photographrs online.",
+    photo: volodymyr
   }
 ]
 

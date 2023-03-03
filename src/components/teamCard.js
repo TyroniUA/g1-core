@@ -6,7 +6,7 @@ export default function TeamCard({
 }) {
   return (
     <div
-      className=''
+      className="w-300"
     >
       <img
         src={img}
